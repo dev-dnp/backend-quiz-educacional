@@ -57,7 +57,7 @@ CREATE TABLE Quiz
   criado_em DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
   atualizado_em DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
 
-  CONSTRAINT fk_autor FOREIGN KEY (autor_id) references Usuario(id),
+  CONSTRAINT fk_autor_ou_usuario FOREIGN KEY (autor_id) references Usuario(id),
   CONSTRAINT fk_area FOREIGN KEY (area_id) references Area(id)
 );
 
